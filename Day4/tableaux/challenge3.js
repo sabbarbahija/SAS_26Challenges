@@ -24,6 +24,22 @@ function trouverMax(tab) {
     return max;
 
 }
+function min(tab){
+    let min=tab[0];
+    for(let i=0;i<tab.length; i++){
+
+        if(min>tab[i]){
+            min =tab[i];
+        }
+
+    }
+    return min;
+}
+
+
 let t=[1,12,3];
 let max=trouverMax(t);
+let mi=min(t);
  console.log(max);
+ console.log(mi);
+
