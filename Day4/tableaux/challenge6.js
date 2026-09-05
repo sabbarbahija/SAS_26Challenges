@@ -1,13 +1,15 @@
-// Défi 6 : Inversion Manuelle (Simulation de reverse)
-function inverserTableau(tab) {
-    let t = [];
-    for (let i = tab.length - 1; i >= 0; i--) {
-        t[tab.length - 1 - i] = tab[i];
+function  inverserTableau(tab){
+let ele;
+    d=0;
+    f=tab.length-1;
+    while(d<f){
+        ele=tab[d];
+        tab[d]=tab[f];
+        tab[f]=ele;
+        d++;
+        f--;
     }
-
-    return t;
+    return tab;
 }
-let t = [1, 12, 3];
-let res = inverserTableau(t);
-
-console.log(res);
+  
+console.log(inverserTableau([5,8,9,0]));
